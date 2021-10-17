@@ -25,6 +25,11 @@ void setup() {
  BLE.addCharacteristic(greenCharacteristic);
  BLE.addCharacteristic(blueCharacteristic);
 
+  // Static function for handling Bluetooth Low Energy callbacks
+ static void onDataReceived(const uint8_t* data, size_t len, const BlePeerDevice& peer, void* context) {
+
+ }
+
  
  
 }
