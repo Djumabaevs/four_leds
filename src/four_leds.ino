@@ -30,6 +30,14 @@ void setup() {
 
  }
 
+  // Advertising data
+ BleAdvertisingData advData;
+
+ // Add the RGB LED service
+ advData.appendServiceUUID(rgbService);
+
+ // Start advertising!
+ BLE.advertise(&advData);
  
  
 }
